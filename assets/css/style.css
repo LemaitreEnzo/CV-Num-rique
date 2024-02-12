@@ -378,6 +378,14 @@ footer {
 
     /* Header */
 
+    #nav-portfolio,
+    #nav-service,
+    #nav-home,
+    #nav-profil {
+        height: 150px;
+    }
+    
+
     #nav-list {
         display: none;
         height: 90px;
@@ -414,6 +422,12 @@ footer {
         object-fit: cover;
     }
 
+    #profil {
+        margin-bottom: 20%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
     #cv {
         height: 3%;
         width: 30%;
@@ -445,6 +459,14 @@ footer {
 
     #portfolio {
         margin-bottom: 5%;
+    }
+
+
+    /* Footer */
+
+    footer {
+        margin-top: 20%;
+        z-index: 2;
     }
 
 
