@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>CV Numérique</title>
+</head>
+
+<body>
+    <header>
+        <div id="menuIcon" onclick="toggleMenu()">
+            <div class="hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav id="nav-list">
+            <ul>
+                <li><a href="#nav-home">Accueil</a></li>
+                <li><a href="#nav-profil">Profil</a></li>
+                <li><a href=""></a></li>
+                <li><a href="#nav-service">Service</a></li>
+                <li><a href="#nav-portfolio">Portfolio</a></li>
+            </ul>
+
+        </nav>
+
+
+
+    </header>
+
+    <main>
+        <div id="nav-home"></div>
+        <section id="home">
+            <div>
+                <img src="assets/img/moi.png" alt="Photo de moi" id="moi">
+                <h1>WEB & APP DEVELOPMENT STUDENT</h1>
+                <button id="cv"><a href="assets/pdf/cv.pdf" target="_blank" rel="noopener noreferrer">Télécharger le CV
+                        papier</a></button>
+
+            </div>
+
+        </section>
+
+        <div id="nav-profil"></div>
+
+        <section id="profil">
+            <p>Bonjour, je m'appelle Enzo LEMAITRE j'ai 18 ans. Je suis actuellement en première année de bachelor à
+                <strong><a href="https://lamanu.fr/">LA MANU</a></strong>. J'aimerai devenir <u>développeur
+                    d'application
+                    ou développeur
+                    web</u>.
+            </p>
+
+        </section>
+
+        <section id="service">
+
+            <div id="nav-service"></div>
+
+            <h2 id="service-title">Mes services</h2>
+
+            <div id="my-service" class="animate__animated animate__backInUp animated-box">
+
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="card-text">
+                                <ion-icon name="code-slash-outline"></ion-icon>
+                                <p>DÉVELOPPEUR FRONT-END</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-text">
+                                <p>Je suis capable de créer un site web à partir de demande spécifique grâce à
+                                    différents
+                                    langages de programmation (HTML, CSS, JS, Vue.JS ...)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="card-text">
+                                <ion-icon name="pencil-outline"></ion-icon>
+                                <p>DESIGNER</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-text">
+                                <p>Je suis capable de créer un logo, faire des mockup, faire des maquettes pour des
+                                    sites ou
+                                    des applications (figma).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="card-front">
+                            <div class="card-text">
+                                <ion-icon name="analytics-outline"></ion-icon>
+                                <p>DÉVELOPPEUR BACK-END</p>
+                            </div>
+                        </div>
+                        <div class="card-back">
+                            <div class="card-text">
+                                <p>Je suis capable de créer des bases de données afin de stocker les informations venant
+                                    des
+                                    sites, créer des programmes grâce à Python notamment...</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="responsive"></div>
+            </div>
+
+        </section>
+
+        <section id="portfolio">
+
+            <div id="nav-portfolio"></div>
+
+            <h2>Mon portfolio</h2>
+
+            <div id="my-portfolio" class="animate__animated animate__backInUp">
+
+                <div id="restaurant" class="container-portfolio">
+                    <div class="portfolio">
+                        <img src="assets/img/restaurant.png" alt="" class="img-portfolio">
+                        <div class="text-portfolio">
+                            <p>Projet réalisé consistant à créer un site web pour un chef de
+                                restaurant (en groupe de 3).</p>
+                            <button class="view"><a href="https://lemaitreenzo.github.io/restaurant_Michel-bouillon/"
+                                    target="_blank">Voir le projet</a></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="shifumi" class="container-portfolio">
+                    <div class="portfolio">
+                        <img src="assets/img/shifumi.png" alt="" class="img-portfolio">
+                        <div class="text-portfolio">
+                            <p>Projet réalisé en groupe de 3 (en 3 jours) consistant à recréer le jeu du shifumi.</p>
+                            <button class="view"><a href="https://lemaitreenzo.github.io/shifumi/" target="_blank">Voir
+                                    le
+                                    projet</a></button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div id="mockup-mug" class="container-portfolio">
+                    <div class="portfolio">
+                        <img src="assets/img/mockup-mug.png" alt="" class="img-portfolio">
+                        <div class="text-portfolio">
+                            <p>Travail réalisé pour le domaine scolaire.</p>
+                            <button class="view"><a href="assets/img/mockup-mug.png" target="_blank">Voir le
+                                    projet</a></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="mockup-calendar" class="container-portfolio">
+                    <div class="portfolio">
+                        <img src="assets/img/mockup-calendar.png" alt="" class="img-portfolio">
+                        <div class="text-portfolio">
+                            <p>Travail réalisé pour le domaine scolaire (en groupe de 2) à partir d'un concour de design
+                                (brief créatif).</p>
+                            <button class="view"><a href="assets/img/mockup_comfortable.png" target="_blank">Voir le
+                                    projet</a></button>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="mockup-mug" class="container-portfolio">
+                    <div class="portfolio" id="wolf">
+                        <img src="assets/img/loup-lowpoly.png" alt="" class="img-portfolio">
+                        <div class="text-portfolio">
+                            <p>Travail réalisé pour le domaine scolaire.</p>
+                            <button class="view"><a href="assets/img/loup-lowpoly.png" target="_blank">Voir le
+                                    projet</a></button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <div class="info">
+            <div class="contact">
+                <span><a href="tel:0699417519" target="_blank" class="contact-icon"><ion-icon name="call-outline"
+                            class="media"></ion-icon></a></span>
+                <p>06 99 41 75 19</p>
+            </div>
+            <br>
+            <div class="contact">
+                <span><a href="mailto:lemaitreenzo05@gmail.com" target="_blank" class="contact-icon"><ion-icon
+                            name="mail-outline" class="media"></ion-icon></a></span>
+                <p>lemaitreenzo05@gmail.com</p>
+            </div>
+            <br>
+            <div class="contact">
+                <span><a href="" class="contact-icon"><ion-icon name="location-outline"
+                            class="media"></ion-icon></a></ion-icon></span>
+                <p>Elincourt-Sainte-Marguerite 60157</p>
+            </div>
+        </div>
+
+        <div class="info" id="social-media">
+            <div class="réseaux">
+                <a href="https://www.instagram.com/enzo.lemaitre_/?next=%2F" target="_blank"><ion-icon
+                        name="logo-instagram" class="media"></ion-icon></a>
+            </div>
+            <br>
+            <div class="réseaux">
+                <a href="https://github.com/LemaitreEnzo" target="_blank"><ion-icon name="logo-github"
+                        class="media"></ion-icon></a>
+            </div>
+            <br>
+            <div class="réseaux">
+                <a href="https://www.linkedin.com/in/enzo-lemaitre-55069b29b/" target="_blank"><ion-icon
+                        name="logo-linkedin" class="media"></ion-icon></a>
+            </div>
+        </div>
+    </footer>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

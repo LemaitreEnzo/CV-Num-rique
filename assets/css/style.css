@@ -1,0 +1,451 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+#menuIcon {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.hamburger-icon {
+    position: relative;
+    width: 30px;
+    height: 20px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(45deg, #ff6e40, #3e3d59);
+    border: 0.5px solid #ff6e40;
+    border-radius: 5px;
+    box-shadow:
+        0 0 1px #000,
+        0 0 2px #000;
+}
+
+.hamburger-icon span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 50%;
+}
+.hamburger-icon span:nth-child(2) {
+    width: 75%;
+}
+.hamburger-icon span:nth-child(3) {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+.responsive {
+    display: none;
+}
+
+body {
+    background-color: #1e3d59;
+}
+
+h1 {
+    color: #ff6e40;
+    text-shadow: 1px 5px 10px #ff6e40;
+    margin-bottom: 50px;
+    animation: colorful 6s infinite;
+}
+
+@keyframes colorful {
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+h2 {
+    text-align: center;
+    font-family: kanit;
+    font-size: 3em;
+}
+
+/* Nav */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    background-color: #ff6e40;
+}
+
+nav {
+    height: 75px;
+}
+
+#menuIcon {
+    display: none;
+    flex-direction: column;
+}
+
+nav ul a:hover {
+    color: #1e3d59;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding: 1%;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/* Effet de retournement */
+#my-service {
+    display: flex;
+    justify-content: space-around;
+    animation-duration: 1s;
+    height: 100vh;
+}
+
+#service {
+    background-color: #2F3f5f;
+}
+
+
+.card-container {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    margin-top: 20%;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+}
+
+.card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+}
+
+.card-front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ff6e40;
+    border: 1px solid #fff;
+    backface-visibility: hidden;
+}
+
+.card-back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #ff6e40;
+    border: 1px solid #fff;
+    backface-visibility: hidden;
+    transform: rotateY(-180deg);
+}
+
+.card-text {
+    text-align: center;
+    margin-top: 20%;
+}
+
+.card-back {
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+ion-icon {
+    font-size: 3em;
+    color: #fff;
+}
+
+
+/* home */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+a:hover {
+    color: #ff6e40;
+}
+
+#cv {
+    width: 15%;
+    height: 3%;
+    background-color: #ff6e40;
+    padding: 1%;
+}
+
+#cv:hover {
+    background-color: #fff;
+    transition: 0.25s ease-in;
+}
+
+#cv:hover a {
+    color: #ff6e40;
+    transition: 0.25s ease-in;
+}
+
+/* Profil */
+
+#profil {
+    text-align: center;
+    font-size: 1.5em;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-bottom: 10%;
+}
+
+/* Portfolio */
+
+#my-portfolio {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 5%;
+    margin-right: 5%;
+    animation-duration: 2s;
+    height: 100vh;
+}
+
+.container-portfolio {
+    height: 200px;
+    width: 300px;
+    margin-top: 20%;
+}
+
+.portfolio {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+.img-portfolio {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: opacity 0.25s;
+}
+
+.text-portfolio {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(#3e3d59, #ff6e40);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 0.75;
+    opacity: 0;
+    transition: opacity 0.25s;
+    text-align: center;
+}
+
+.text-portfolio p {
+    margin-top: 20%;
+}
+
+.text-portfolio:hover {
+    opacity: 1;
+}
+
+.img-portfolio:hover {
+    opacity: 0.7;
+}
+
+.view {
+    background-color: #ff6e40;
+    padding: 1%;
+}
+
+.view:hover {
+    background-color: #fff;
+    transition: 0.25s ease-in;
+}
+
+.view:hover a {
+    color: #ff6e40;
+    transition: 0.25s ease-in;
+}
+
+#wolf {
+    border: solid 1px #fff;
+}
+
+
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    max-height: 250px;
+}
+
+.contact {
+    display: flex;
+    margin-left: 20%;
+    width: 250px;
+}
+
+
+.contact-icon {
+    height: 10px;
+    width: 200px;
+}
+
+.info {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+#social-media {
+    margin-left: 30%;
+    justify-content: space-evenly;
+}
+
+.reseaux {
+    margin-left: 3%;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+}
+
+.contact p {
+    margin-left: 5%;
+}
+
+.contact-icon {
+    font-size: 0.5em;
+}
+
+.media:hover {
+    color: #ff6e40;
+    transition: 0.25s ease-in;
+}
+
+#nav-portfolio,
+#nav-service,
+#nav-home,
+#nav-profil {
+    height: 100px;
+}
+
+
+/* Responsive */
+
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+
+    #nav-list {
+        display: none;
+        height: 90px;
+    }
+
+    #nav-list.show {
+        display: flex;
+        background-color: #fff;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 45%;
+    }
+
+    #nav-list a {
+        color: #1e3d59;
+    }
+
+    #nav-list a:hover {
+        color: #ff6e40;
+    }
+
+    #menuIcon {
+        display: flex;
+        margin-left: 10%;
+    }
+
+    #moi {
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+    }
+
+    #cv {
+        height: 3%;
+        width: 30%;
+    }
+
+
+    /* Service */
+
+    #my-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .responsive {
+        margin-bottom: 20%;
+        display: block;
+    }
+
+    /* Portfolio */
+
+    #my-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+
+    #portfolio {
+        margin-bottom: 5%;
+    }
+
+
+}
