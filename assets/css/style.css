@@ -44,9 +44,11 @@
     left: 0;
     width: 50%;
 }
+
 .hamburger-icon span:nth-child(2) {
     width: 75%;
 }
+
 .hamburger-icon span:nth-child(3) {
     bottom: 0;
     left: 0;
@@ -312,23 +314,17 @@ a:hover {
 /* Footer */
 
 footer {
-    width: 100%;
     background-color: #000;
     display: flex;
     justify-content: space-evenly;
-    max-height: 250px;
+    max-height: 300px;
 }
 
 .contact {
     display: flex;
     margin-left: 20%;
     width: 250px;
-}
-
-
-.contact-icon {
-    height: 10px;
-    width: 200px;
+    margin-bottom: 7%;
 }
 
 .info {
@@ -355,7 +351,7 @@ footer {
 }
 
 .contact-icon {
-    font-size: 0.5em;
+    font-size: 0.75em;
 }
 
 .media:hover {
@@ -374,7 +370,9 @@ footer {
 /* Responsive */
 
 
-@media screen and (max-width: 768px) {
+/* Media query pour les téléphones */
+
+@media screen and (max-width: 700px) {
 
     /* Header */
 
@@ -384,7 +382,7 @@ footer {
     #nav-profil {
         height: 150px;
     }
-    
+
 
     #nav-list {
         display: none;
@@ -423,7 +421,7 @@ footer {
     }
 
     #profil {
-        margin-bottom: 20%;
+        margin-bottom: 10%;
         padding-left: 15%;
         padding-right: 15%;
     }
@@ -453,14 +451,12 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
     }
-
-
 
     #portfolio {
-        margin-bottom: 5%;
+        margin-bottom: 10%;
     }
-
 
     /* Footer */
 
@@ -469,5 +465,148 @@ footer {
         z-index: 2;
     }
 
+    .contact {
+        display: flex;
+        margin-left: 20%;
+        width: 100%;
+        margin-bottom: 1%;
+    }
 
+    #social-media {
+        margin-left: 20%;
+        justify-content: space-evenly;
+    }
+
+    .reseaux {
+        margin-left: 3%;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .contact p {
+        margin-left: 5%;
+        font-size: 0.75em;
+    }
+
+    .contact-icon {
+        font-size: 0.5em;
+    }
+
+
+}
+
+
+/* Media query pour les tablettes */
+
+@media screen and (min-width:700px) and (max-width:1024px) {
+
+    /* Header */
+
+    #nav-portfolio,
+    #nav-service,
+    #nav-home,
+    #nav-profil {
+        height: 150px;
+    }
+
+    #nav-list {
+        display: none;
+        height: 90px;
+    }
+
+    #nav-list.show {
+        display: flex;
+        background-color: #fff;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 45%;
+    }
+
+    #nav-list a {
+        color: #1e3d59;
+    }
+
+    #nav-list a:hover {
+        color: #ff6e40;
+    }
+
+    #menuIcon {
+        display: flex;
+        margin-left: 10%;
+    }
+
+    /* Service */
+
+    #my-service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    .card-container {
+        height: 210px;
+        width: 300px;
+    }
+
+    .responsive {
+        margin-bottom: 20%;
+        display: block;
+    }
+
+    /* Portfolio */
+
+    #my-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
+
+    #portfolio {
+        margin-bottom: 10%;
+    }
+
+    /* Footer */
+
+    footer {
+        margin-top: 20%;
+        z-index: 2;
+    }
+
+    .contact {
+        display: flex;
+        margin-left: 20%;
+        width: 100%;
+        margin-bottom: 1%;
+    }
+
+    #social-media {
+        margin-left: 20%;
+        justify-content: space-evenly;
+    }
+
+    .reseaux {
+        margin-left: 3%;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact p {
+        margin-left: 5%;
+    }
+
+    .contact-icon {
+        font-size: 1em;
+    }
 }
