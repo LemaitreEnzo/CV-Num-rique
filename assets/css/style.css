@@ -3,6 +3,7 @@
     padding: 0;
     color: #fff;
     scroll-behavior: smooth;
+    font-family: "Kanit", sans-serif;
 }
 
 #menuIcon {
@@ -174,6 +175,10 @@ a {
 .card-text {
     text-align: center;
     margin-top: 20%;
+}
+
+.card-title p {
+    font-size: 1.25em;
 }
 
 .card-back {
