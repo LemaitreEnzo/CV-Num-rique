@@ -235,19 +235,18 @@ a:hover {
 
 /* Portfolio */
 
-#my-portfolio {
+.my__portfolio {
     display: flex;
     justify-content: space-around;
     margin-left: 5%;
     margin-right: 5%;
     animation-duration: 2s;
-    height: 100vh;
 }
 
 .container-portfolio {
     height: 200px;
     width: 300px;
-    margin-top: 20%;
+    margin-top: 5%;
 }
 
 .portfolio {
@@ -314,6 +313,7 @@ a:hover {
 /* Footer */
 
 footer {
+    margin-top: 20%;
     background-color: #000;
     display: flex;
     justify-content: space-evenly;
