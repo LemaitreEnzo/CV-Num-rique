@@ -6,6 +6,10 @@
     font-family: "Kanit", sans-serif;
 }
 
+body {
+    overflow-x: hidden;
+  }  
+
 #menuIcon {
     position: relative;
     width: 50px;
@@ -377,6 +381,7 @@ footer {
         margin: 0;
         padding: 0;
     }
+      
 
     /* Header */
 
@@ -393,20 +398,37 @@ footer {
         height: 90px;
     }
 
+    #nav-list {
+        display: none;
+        height: 90px;
+        justify-content: center; /* Centre les éléments horizontalement */
+        align-items: center; /* Centre les éléments verticalement */
+    }
+    
     #nav-list.show {
         display: flex;
         background-color: #fff;
+        justify-content: center;
+        align-items: center;
     }
-
+    
     nav ul {
+        margin-top: 3%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-left: 45%;
+        justify-content: center;
+        height: 100%;
     }
-
-    #nav-list a {
+    
+    
+    nav ul a {
+        text-decoration: none;
         color: #1e3d59;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
     }
 
     #nav-list a:hover {
@@ -452,11 +474,10 @@ footer {
 
     /* Portfolio */
 
-    #my-portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
+    .my__portfolio { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
     }
 
     #portfolio {
@@ -568,11 +589,10 @@ footer {
 
     /* Portfolio */
 
-    #my-portfolio {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
+    .my__portfolio { 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
     }
 
     #portfolio {
