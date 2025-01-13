@@ -122,14 +122,14 @@ a {
 
 
 /* Effet de retournement */
-#my-service {
+#my-compétence {
     display: flex;
     justify-content: space-around;
     animation-duration: 1s;
     height: 100vh;
 }
 
-#service {
+#compétence {
     background-color: #2F3f5f;
 }
 
@@ -354,13 +354,13 @@ footer {
     font-size: 0.75em;
 }
 
-.media:hover {
+.media:hover, .icon:hover {
     color: #ff6e40;
     transition: 0.25s ease-in;
 }
 
 #nav-portfolio,
-#nav-service,
+#nav-compétence,
 #nav-home,
 #nav-profil {
     height: 100px;
@@ -373,11 +373,15 @@ footer {
 /* Media query pour les téléphones */
 
 @media screen and (max-width: 700px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
 
     /* Header */
 
     #nav-portfolio,
-    #nav-service,
+    #nav-compétence,
     #nav-home,
     #nav-profil {
         height: 150px;
@@ -432,9 +436,9 @@ footer {
     }
 
 
-    /* Service */
+    /* compétence */
 
-    #my-service {
+    #my-compétence {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -507,7 +511,7 @@ footer {
     /* Header */
 
     #nav-portfolio,
-    #nav-service,
+    #nav-compétence,
     #nav-home,
     #nav-profil {
         height: 150px;
@@ -543,9 +547,9 @@ footer {
         margin-left: 10%;
     }
 
-    /* Service */
+    /* compétence */
 
-    #my-service {
+    #my-compétence {
         display: flex;
         flex-direction: column;
         align-items: center;
