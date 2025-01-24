@@ -6,6 +6,12 @@
     font-family: "Kanit", sans-serif;
 }
 
+:root{
+    --primary : #0f1e22;
+    --secondary : #408ec6;
+    --hover : #7a2048;
+}
+
 body {
     overflow-x: hidden;
   }  
@@ -36,8 +42,8 @@ body {
     display: block;
     width: 100%;
     height: 5px;
-    background: linear-gradient(45deg, #ff6e40, #3e3d59);
-    border: 0.5px solid #ff6e40;
+    background: linear-gradient(45deg, var(--primary), var(--secondary));
+    border: 0.5px solid var(--secondary);
     border-radius: 5px;
     box-shadow:
         0 0 1px #000,
@@ -66,12 +72,12 @@ body {
 }
 
 body {
-    background-color: #1e3d59;
+    background-color: var(--primary);
 }
 
 h1 {
-    color: #ff6e40;
-    text-shadow: 1px 5px 10px #ff6e40;
+    color: var(--secondary);
+    text-shadow: 1px 5px 10px var(--secondary);
     margin-bottom: 50px;
     animation: colorful 6s infinite;
 }
@@ -95,7 +101,7 @@ header {
     width: 100%;
     overflow: hidden;
     z-index: 1;
-    background-color: #ff6e40;
+    background-color: var(--secondary);
 }
 
 nav {
@@ -108,7 +114,7 @@ nav {
 }
 
 nav ul a:hover {
-    color: #1e3d59;
+    color: var(--hover);
 }
 
 nav ul {
@@ -134,7 +140,7 @@ a {
 }
 
 #compétence {
-    background-color: #2F3f5f;
+    background-color: #152a30;
 }
 
 
@@ -161,7 +167,7 @@ a {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #ff6e40;
+    background-color: var(--secondary);
     border: 1px solid #fff;
     backface-visibility: hidden;
 }
@@ -170,7 +176,7 @@ a {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-color: #ff6e40;
+    background-color: var(--secondary);
     border: 1px solid #fff;
     backface-visibility: hidden;
     transform: rotateY(-180deg);
@@ -207,13 +213,13 @@ ion-icon {
 }
 
 a:hover {
-    color: #ff6e40;
+    color: var(--hover);
 }
 
 #cv {
     width: 15%;
     height: 3%;
-    background-color: #ff6e40;
+    background-color: var(--secondary);
     padding: 1%;
 }
 
@@ -223,7 +229,7 @@ a:hover {
 }
 
 #cv:hover a {
-    color: #ff6e40;
+    color: var(--hover);
     transition: 0.25s ease-in;
 }
 
@@ -273,7 +279,7 @@ a:hover {
     position: absolute;
     width: 300px;
     height: 200px;
-    background: linear-gradient(#3e3d59, #ff6e40);
+    background: linear-gradient(#3e3d59, var(--secondary));
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -297,7 +303,7 @@ a:hover {
 }
 
 .view {
-    background-color: #ff6e40;
+    background-color: var(--hover);
     padding: 1%;
 }
 
@@ -307,7 +313,7 @@ a:hover {
 }
 
 .view:hover a {
-    color: #ff6e40;
+    color: var(--hover);
     transition: 0.25s ease-in;
 }
 
@@ -359,7 +365,7 @@ footer {
 }
 
 .media:hover, .icon:hover {
-    color: #ff6e40;
+    color: var(--hover);
     transition: 0.25s ease-in;
 }
 
@@ -424,7 +430,7 @@ footer {
     
     nav ul a {
         text-decoration: none;
-        color: #1e3d59;
+        color: var(--primary);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -432,7 +438,7 @@ footer {
     }
 
     #nav-list a:hover {
-        color: #ff6e40;
+        color: var(--secondary);
     }
 
     #menuIcon {
@@ -556,11 +562,11 @@ footer {
     }
 
     #nav-list a {
-        color: #1e3d59;
+        color: var(--primary);
     }
 
     #nav-list a:hover {
-        color: #ff6e40;
+        color: var(--secondary);
     }
 
     #menuIcon {
